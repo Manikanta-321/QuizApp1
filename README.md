@@ -33,59 +33,59 @@ After creating the files just paste the following codes into your file. Make sur
 Here is an explanation of each element:
 
 
-#### <!DOCTYPE html>: 
+### <!DOCTYPE html>: 
 This is a declaration that specifies the HTML version being used, in this case, HTML5.
 
 
-#### <html>: 
+### <html>: 
 The root element of an HTML document. It encapsulates all other elements on the page.
 
 
-#### <head>: 
+### <head>: 
 This element contains metadata and other information about the web page that is not directly displayed on the page itself.
 
 
-#### <title>: 
+### <title>: 
 This element sets the title of the web page, which appears in the browser's title bar or tab.
 
 
-#### <link rel="stylesheet" href="quiz.css">: 
+### <link rel="stylesheet" href="quiz.css">: 
 This line links an external CSS stylesheet file named "styles.css" to the HTML document. It is used to apply styles to the elements on the page.
 
 
-#### <body>: 
+### <body>: 
 The main content of the web page is placed within this element.
 
 
-#### <div class="container">: 
+### <div class="container">: 
 This <div> element acts as a container for grouping and organizing other elements.
 
 
-#### <h1>Quiz App</h1>: 
+### <h1>Quiz App</h1>: 
 This <h1> heading element displays the text "Quiz App" as the main heading of the web page.
 
 
-#### <div id="quiz"></div>: 
+### <div id="quiz"></div>: 
 This <div> element with the id attribute "quiz" will serve as a placeholder for dynamically generated quiz questions.
 
 
-#### <div id="result" class="result"></div>: 
+### <div id="result" class="result"></div>: 
 This <div> element with the id attribute "result" and class attribute "result" will be used to display the quiz result.
 
 
-#### <button id="submit" class="button">Submit</button>:
+### <button id="submit" class="button">Submit</button>:
  This <button> element with the id attribute "submit" and class attribute "button" represents a button labeled "Submit." Users can click this button to submit their quiz answers.
 
 
-#### <button id="retry" class="button hide">Retry</button>: 
+### <button id="retry" class="button hide">Retry</button>: 
 This <button> element with the id attribute "retry" and class attribute "button hide" represents a button labeled "Retry." It is initially hidden (hide class), and will be displayed when the user wants to retry the quiz.
 
 
-#### <button id="showAnswer" class="button hide">Show Answer</button>: 
+### <button id="showAnswer" class="button hide">Show Answer</button>: 
 This <button> element with the id attribute "showAnswer" and class attribute "button hide" represents a button labeled "Show Answer." It is initially hidden (hide class), and will be displayed to allow users to see the correct answers.
 
 
-#### <script src="quiz.js"></script>: 
+### <script src="quiz.js"></script>: 
 This line includes an external JavaScript file named "script.js" that contains the logic and functionality for the quiz app. The JavaScript code will be executed when the browser encounters this script tag.
 
    
@@ -96,127 +96,127 @@ Once the basic HTML structure of the quiz application is in place, the next step
 
 Next, we will create our CSS file. In this file, we will use some basic CSS rules to create our quiz application.
 
-#### 1. @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');: 
+### 1. @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');: 
 This line imports the Poppins font from Google Fonts, with different font weights (400, 500, and 700). The display=swap ensures that the text is displayed using fallback fonts until the Poppins font is fully loaded.
 
 
-#### 2. body: 
+### 2. body: 
 This selector targets the element of the HTML document. It sets the following properties:
 
 
-#### font-family: 'Poppins', sans-serif;: 
+### font-family: 'Poppins', sans-serif;: 
 It specifies the font family for the entire body text, using Poppins as the preferred font. If Poppins is not available, it falls back to the generic sans-serif font.
 background: #b9b3a9;: It sets the background color of the body to a light grayish-brown color (#b9b3a9).
 #### display: flex;: 
 It makes the body a flex container.
 justify-content: center;: It horizontally centers the flex items (content) within the body.
 
-#### 3. .container: 
+### 3. .container: 
 This selector targets an element with the class "container". It sets the following properties:
 
 
-#### width: 450px;: 
+### width: 450px;: 
 It sets the width of the container to 450 pixels.
-#### padding: 20px;: 
+### padding: 20px;: 
 It adds 20 pixels of padding around the content of the container.
-#### margin-top: 80px;: 
+### margin-top: 80px;: 
 It creates a top margin of 80 pixels for the container.
-#### background-color: #ff6600; 
+### background-color: #ff6600; 
 It sets the background color of the container to white (#fff).
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);: It applies a box shadow to the container, creating a subtle shadow effect.
 border-radius: 20px;: It adds rounded corners to the container, with a border radius of 20 pixels.
 
-#### 4. h1: 
+### 4. h1: 
 This selector targets all <h1> elements. It sets the following property:
 
 
-#### text-align: center;: 
+### text-align: center;: 
 It aligns the text within the <h1> element to the center.
 
-#### 5. .question: 
+### 5. .question: 
 This selector targets an element with the class "question". It sets the following properties:
 
 
-#### font-weight: bold;: 
+### font-weight: bold;: 
 It makes the text within the element bold.
 margin-bottom: 10px;: It adds a bottom margin of 10 pixels to the element.
 
-#### 6. .options: 
+### 6. .options: 
 This selector targets an element with the class "options". It sets the following property:
 
 
-#### margin-bottom: 20px;: 
+### margin-bottom: 20px;: 
 It adds a bottom margin of 20 pixels to the element.
 
-#### 7. .option: 
+### 7. .option: 
 This selector targets an element with the class "option". It sets the following property:
 
 
-#### display: block;: 
+### display: block;: 
 It makes the element a block-level element, causing it to take up the full width available.
 
-#### 8. .button: 
+### 8. .button: 
 This selector targets an element with the class "button". It sets the following properties:
 
 
-#### display: inline-block;: 
+### display: inline-block;: 
 It makes the element an inline block.
-#### padding: 10px 20px;: 
+### padding: 10px 20px;: 
 It adds 10 pixels of padding on the top and bottom and 20 pixels of padding on the left and right.
-#### background-color: #428bca;: 
+### background-color: #428bca;: 
 It sets the background color of the button to a shade of blue (#428bca).
-#### color: #fff;: 
+### color: #fff;: 
 It sets the text color of the button to white (#fff).
-#### border: none;: 
+### border: none;: 
 It removes the border around the button.
-#### cursor: pointer;: 
+### cursor: pointer;: 
 It changes the cursor to a pointer when hovering over the button.
-#### font-size: 16px;: 
+### font-size: 16px;: 
 It sets the font size of the button text to 16 pixels.
-#### border-radius: 4px;: 
+### border-radius: 4px;: 
 It adds rounded corners to the button, with a border radius of 4 pixels.
-#### transition: background-color 0.3s;: 
+### transition: background-color 0.3s;: 
 It adds a transition effect to the background color property, with a duration of 0.3 seconds.
-#### margin-right: 10px;: 
+### margin-right: 10px;: 
 It adds a right margin of 10 pixels to the button.
 
-#### 9. .button:hover: 
+### 9. .button:hover: 
 This selector targets the button when it is being hovered over. It sets the following property:
 
 
-#### background-color: #fff;: 
+### background-color: #fff;: 
 It changes the background color of the button to a darker shade of white when hovered.
 
-#### color:#0000cd;:
+### color:#0000cd;:
 It changes the color of the font while hovered.
 
-#### cursor: pointer;:
+### cursor: pointer;:
 Cursor becomes the pointer when hovered over it.
 
-#### 10. .result: 
+### 10. .result: 
 This selector targets an element with the class "result". It sets the following properties:
 
 
-#### text-align: center;: 
+### text-align: center;: 
 It aligns the text within the element to the center.
 #### margin-top: 20px;: 
 It adds a top margin of 20 pixels to the element.
-#### font-weight: bold;: 
+### font-weight: bold;: 
 It makes the text within the element bold.
 
-#### 11. .hide: 
+### 11. .hide: 
 This selector targets an element with the class "hide". It sets the following property:
 
 
-#### display: none;: 
+### display: none;: 
 It hides the element by setting its display property to "none".
 
-#### 12. .option:hover:
+### 12. .option:hover:
 
-#### color:#fff;:
+### color:#fff;:
 It changes the color of the font to white while hovered.
 
-#### cursor: pointer;:
+### cursor: pointer;:
 Cursor becomes the pointer when hovered over it.
 
 ### Step 3 (JavaScript Code):
